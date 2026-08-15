@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Dashboard — Coffee Lahore</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+    </div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<main class="container" style="padding: 40px 24px 60px;">
+  <div class="dash-header">
+    <div>
+      <div class="eyebrow">Private to you</div>
+      <h1 id="welcomeMsg">My Dashboard</h1>
+      <p style="color:var(--cocoa-soft);">This page is only visible to you — keep track of the cafes you've tried.</p>
+    </div>
+    <a href="/index.html#all-cafes" class="btn btn-outline">Browse More Cafes</a>
+  </div>
+
+  <div class="stat-row" id="statRow"></div>
+
+  <h2>Cafes I've Tried</h2>
+  <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+  <div id="triedList"><p>Loading…</p></div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Coffee Lahore</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+    </div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<main class="container" style="padding: 40px 24px 60px;">
+  <div class="eyebrow">Admin panel</div>
+  <h1>Manage Cafes, Drinks &amp; Creators</h1>
+  <p style="color:var(--cocoa-soft); max-width:60ch;">Only admin accounts can add or remove cafes and drinks, or mark users as Creators. Everyone else can browse, rate, and comment.</p>
+
+  <div id="adminGate"></div>
+
+  <div id="adminBody" class="hidden">
+    <div class="admin-tabs">
+      <button class="admin-tab active" data-tab="cafes">Cafes</button>
+      <button class="admin-tab" data-tab="drinks">Drinks</button>
+      <button class="admin-tab" data-tab="users">Users</button>
+    </div>
+
+    <div id="tab-cafes">
+      <div class="form-card wide" style="max-width:none; margin-bottom:30px;">
+        <h3>Add a New Cafe</h3>
+        <div id="cafeFormNotice"></div>
+        <form id="cafeForm">
+          <label for="cafeName">Cafe name</label>
+          <input type="text" id="cafeName" required>
+
+          <label for="cafeArea">Area (e.g. Gulberg, DHA, Johar Town)</label>
+          <input type="text" id="cafeArea" required>
+
+          <label for="cafeDesc">Description</label>
+          <textarea id="cafeDesc" placeholder="What makes this cafe special?"></textarea>
+
+          <label for="cafeImage">Image URL (optional)</label>
+          <input type="text" id="cafeImage" placeholder="https://...">
+
+          <button type="submit" class="btn" style="margin-top:20px;">Add Cafe</button>
+        </form>
+      </div>
+
+      <h3>Existing Cafes</h3>
+      <div id="cafesAdminList" class="form-card wide" style="max-width:none;"><p>Loading…</p></div>
+    </div>
+
+    <div id="tab-drinks" class="hidden">
+      <div class="form-card wide" style="max-width:none; margin-bottom:30px;">
+        <h3>Add a New Drink</h3>
+        <div id="drinkFormNotice"></div>
+        <form id="drinkForm">
+          <label for="drinkCafe">Cafe</label>
+          <select id="drinkCafe" required></select>
+
+          <label for="drinkName">Drink name</label>
+          <input type="text" id="drinkName" required>
+
+          <label for="drinkDesc">Description</label>
+          <textarea id="drinkDesc" placeholder="Flavour notes, what's in it..."></textarea>
+
+          <label for="drinkPrice">Price (optional)</label>
+          <input type="text" id="drinkPrice" placeholder="Rs. 650">
+
+          <label for="drinkImage">Image URL (optional)</label>
+          <input type="text" id="drinkImage" placeholder="https://...">
+
+          <button type="submit" class="btn" style="margin-top:20px;">Add Drink</button>
+        </form>
+      </div>
+
+      <h3>Existing Drinks</h3>
+      <div id="drinksAdminList" class="form-card wide" style="max-width:none;"><p>Loading…</p></div>
+    </div>
+
+    <div id="tab-users" class="hidden">
+      <h3>Manage Creators</h3>
+      <p style="color:var(--cocoa-soft); max-width:60ch;">Mark trusted, experienced reviewers as "Creators" so their reviews are featured separately in the Creators' Reviews section on each cafe's page.</p>
+      <div id="usersAdminList" class="form-card wide" style="max-width:none;"><p>Loading…</p></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

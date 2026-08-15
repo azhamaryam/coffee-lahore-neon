@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up — Coffee Lahore</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links"></div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<main class="container" style="padding: 60px 24px;">
+  <div class="form-card">
+    <h2 style="text-align:center;">Join Coffee Lahore</h2>
+    <p style="text-align:center; color:var(--cocoa-soft); margin-top:-8px;">Rate cafes, leave reviews, and keep track of the ones you've tried.</p>
+
+    <div id="formNotice"></div>
+
+    <form id="signupForm">
+      <label for="name">Full name</label>
+      <input type="text" id="name" required autocomplete="name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required autocomplete="email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required autocomplete="new-password" minlength="6">
+      <div class="field-hint">At least 6 characters.</div>
+
+      <button type="submit" class="btn btn-block" style="margin-top:24px;" id="submitBtn">Create Account</button>
+    </form>
+
+    <div class="form-foot">Already have an account? <a href="/login.html">Log in</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/signup.js"></script>
+</body>
+</html>

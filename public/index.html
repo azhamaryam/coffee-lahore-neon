@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Lahore — Discover the city's best cafes</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links">
+      <a href="/index.html#top-cafes">Top Cafes</a>
+      <a href="/index.html#top-drinks">Top Drinks</a>
+      <a href="/index.html#all-cafes">All Cafes</a>
+    </div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <div>
+      <div class="eyebrow">Lahore's coffee community</div>
+      <h1>Find your next favorite cup, one cafe at a time.</h1>
+      <p class="lead">Browse Lahore's cafes, rate the drinks you've tried, and read honest reviews from fellow coffee lovers across the city.</p>
+      <div class="hero-actions">
+        <a href="#all-cafes" class="btn">Explore Cafes</a>
+        <a href="/signup.html" class="btn btn-outline">Join the Community</a>
+      </div>
+      <div class="search-bar">
+        <select id="areaFilter"><option value="">All areas</option></select>
+        <input type="text" id="searchInput" placeholder="Search cafes by name...">
+        <button class="btn btn-small" id="searchBtn">Search</button>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 30C70 30 55 55 60 85C64 110 90 120 100 120C110 120 136 110 140 85C145 55 130 30 100 30Z" fill="#FFF9EA" opacity="0.9"/>
+        <path d="M100 45C82 45 72 62 75 82C78 100 92 108 100 108C108 108 122 100 125 82C128 62 118 45 100 45Z" fill="#4A2E22"/>
+        <path d="M100 45C100 45 95 65 100 82C105 100 100 108 100 108" stroke="#FFF9EA" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="page-section" id="top-cafes">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Community favorites</div>
+        <h2>Top 10 Cafes</h2>
+        <p class="sub">Ranked by average rating — or focus on just one category to analyze it.</p>
+      </div>
+      <select id="topCafeCategory" style="width:auto; max-width:220px; flex-shrink:0;">
+        <option value="">Overall rating</option>
+        <option value="ambiance">Ambiance</option>
+        <option value="service">Service</option>
+        <option value="food">Food</option>
+        <option value="drinks">Drinks & Taste</option>
+      </select>
+    </div>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="topCafesGrid" class="grid"><p>Loading top cafes…</p></div>
+  </section>
+
+  <section class="page-section" id="top-drinks">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Trending this month</div>
+        <h2>Top 10 Drinks of the Month</h2>
+        <p class="sub">The highest-rated drinks people ordered this month.</p>
+      </div>
+    </div>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="topDrinksGrid" class="grid"><p>Loading top drinks…</p></div>
+  </section>
+
+  <section class="page-section" id="all-cafes">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Browse</div>
+        <h2>All Cafes</h2>
+        <p class="sub">Every cafe added by our admins, across Lahore.</p>
+      </div>
+    </div>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="allCafesGrid" class="grid"><p>Loading cafes…</p></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+    <span>Sign up to rate cafes and share your own reviews.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Coffee Lahore</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links"></div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<main class="container" style="padding: 60px 24px;">
+  <div class="form-card">
+    <h2 style="text-align:center;">Welcome back</h2>
+    <p style="text-align:center; color:var(--cocoa-soft); margin-top:-8px;">Log in to rate cafes and share your reviews.</p>
+
+    <div id="formNotice"></div>
+
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" required autocomplete="email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required autocomplete="current-password">
+
+      <button type="submit" class="btn btn-block" style="margin-top:24px;" id="submitBtn">Log In</button>
+    </form>
+
+    <div class="form-foot">New here? <a href="/signup.html">Create an account</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>

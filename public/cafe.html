@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe — Coffee Lahore</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/index.html" class="brand"><span class="bean">☕</span> Coffee Lahore</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+    </div>
+    <div id="nav-auth"></div>
+  </div>
+</nav>
+
+<main class="container" style="padding: 40px 24px 60px;">
+
+  <div id="cafeContent">
+    <p>Loading cafe…</p>
+  </div>
+
+  <section class="page-section" style="padding-top: 10px;">
+    <h2>Ratings Breakdown</h2>
+    <p style="color:var(--cocoa-soft); margin-top:-10px;">Curious about just one thing — like service, or the coffee itself? Filter the breakdown below.</p>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="breakdownFilters" class="admin-tabs"></div>
+    <div id="breakdownDisplay" class="form-card wide" style="max-width:none;"><p>Loading…</p></div>
+  </section>
+
+  <section class="page-section" style="padding-top: 20px;">
+    <h2>Drinks &amp; Flavours</h2>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="drinksList" class="form-card wide" style="max-width:none;">
+      <p>Loading drinks…</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h2>Creators' Reviews</h2>
+    <p style="color:var(--cocoa-soft); margin-top:-10px;">Featured, in-depth reviews from Coffee Lahore's creator community.</p>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+    <div id="creatorReviewsList">
+      <p>Loading…</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h2>Community Reviews</h2>
+    <div class="bean-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C8 2 5 6 6 11c1 4 5 5 6 5s5-1 6-5c1-5-2-9-6-9Z" fill="currentColor"/></svg></div>
+
+    <div id="commentFormArea" style="margin-bottom: 30px;"></div>
+
+    <div id="commentsList">
+      <p>Loading reviews…</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span>☕ Coffee Lahore — made for the city's coffee lovers.</span>
+  </div>
+</footer>
+
+<script src="/js/common.js"></script>
+<script src="/js/cafe.js"></script>
+</body>
+</html>
