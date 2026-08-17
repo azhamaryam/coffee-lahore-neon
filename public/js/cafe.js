@@ -30,7 +30,7 @@ async function loadCafe() {
   try {
     const cafe = await apiFetch('/cafes/' + cafeId);
     currentCafe = cafe;
-    document.title = cafe.name + ' — Coffee Lahore';
+    document.title = cafe.name + ' — Coffee Hub Lahore';
     renderCafe(cafe);
     renderBreakdown(cafe);
     renderDrinks(cafe.drinks);

@@ -1,4 +1,4 @@
--- Coffee Lahore database schema (PostgreSQL / Neon)
+-- Coffee Hub Lahore database schema (PostgreSQL / Neon)
 -- Run with: npm run migrate
 
 CREATE TABLE IF NOT EXISTS users (

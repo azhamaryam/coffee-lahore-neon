@@ -1,4 +1,4 @@
-# Coffee Lahore ☕
+# Coffee Hub Lahore ☕
 
 A warm, butter-yellow-and-cocoa-themed website for coffee lovers in Lahore. Browse cafes, see top-10
 rankings, rate cafes by category, and keep a private list of the cafes you've tried.
